@@ -1,8 +1,7 @@
 import type { Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config = {
-    darkMode: ["class"],
+    darkMode: "class",
     content: [
         './pages/**/*.{ts,tsx}',
         './components/**/*.{ts,tsx}',
@@ -20,8 +19,7 @@ const config = {
         },
         extend: {
             fontFamily: {
-                sans: ["var(--font-sans)", ...fontFamily.sans],
-                // Serif removed for minimal look
+                sans: ["var(--font-noto-sans-kr)", "var(--font-sans)", "system-ui", "sans-serif"],
             },
             colors: {
                 border: "hsl(var(--border))",
@@ -46,7 +44,7 @@ const config = {
                     foreground: "hsl(var(--muted-foreground))",
                 },
                 accent: {
-                    DEFAULT: "hsl(var(--accent))", // Light gray/blue
+                    DEFAULT: "hsl(var(--accent))", // Deep Black for Klug Style
                     foreground: "hsl(var(--accent-foreground))",
                 },
                 popover: {
