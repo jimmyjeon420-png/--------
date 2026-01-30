@@ -1,55 +1,49 @@
 'use client';
 
 import { useEffect } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 
-export default function Analytics() {
-    const pathname = usePathname();
-    const searchParams = useSearchParams();
+/**
+ * GA4 및 GTM 초기화 컴포넌트
+ * - GTM 스크립트 로드
+ * - 페이지뷰 이벤트 자동 추적
+ * - dataLayer 초기화
+ */
+export function Analytics() {
+  const pathname = usePathname();
 
-    useEffect(() => {
-        if (pathname) {
-            pageview(pathname);
-        }
-    }, [pathname, searchParams]);
-
-    if (process.env.NODE_ENV !== 'production') {
-        return null;
+  useEffect(() => {
+    // dataLayer 초기화
+    if (typeof window !== 'undefined') {
+      (window as any).dataLayer = (window as any).dataLayer || [];
     }
 
-    return (
-        <>
-            <noscript>
-                <iframe
-                    src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-                    height="0"
-                    width="0"
-                    style={{ display: 'none', visibility: 'hidden' }}
-                />
-            </noscript>
-            <script
-                id="gtm-script"
-                dangerouslySetInnerHTML={{
-                    __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer', '${GTM_ID}');
-          `,
-                }}
-            />
-        </>
-    );
+    // 페이지뷰 이벤트
+    if (pathname) {
+      trackPageView(pathname);
+    }
+  }, [pathname]);
+
+  return null;
 }
 
-function pageview(url: string) {
-    if (typeof window.dataLayer !== 'undefined') {
-        window.dataLayer.push({
-            event: 'page_view',
-            page_path: url,
-        });
-    }
+/**
+ * 페이지뷰 이벤트 추적
+ */
+function trackPageView(url: string) {
+  if (typeof window === 'undefined') return;
+
+  try {
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({
+      event: 'page_view',
+      page_path: url,
+    });
+  } catch (e) {
+    console.warn('[GA4] 페이지뷰 이벤트 추적 실패:', e);
+  }
 }
+
+export default Analytics;
