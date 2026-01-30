@@ -1,0 +1,46 @@
+[
+    {
+        "id": "bundle-1ea",
+        "name": "EMS Mini Pad (1ea)",
+        "description": "Perfect for trying it out. Instant relief for shoulders and neck.",
+        "price": 9000,
+        "originalPrice": 15000,
+        "currency": "KRW",
+        "image": "/images/ems-single.jpg",
+        "badges": [
+            "Best Trial"
+        ],
+        "shipping": 3000,
+        "items": 1
+    },
+    {
+        "id": "bundle-3ea",
+        "name": "EMS Mini Pad (3ea)",
+        "description": "Keep one, gift two. Free Shipping included.",
+        "price": 25000,
+        "originalPrice": 45000,
+        "currency": "KRW",
+        "image": "/images/ems-set-3.jpg",
+        "badges": [
+            "Free Shipping",
+            "Most Popular"
+        ],
+        "shipping": 0,
+        "items": 3
+    },
+    {
+        "id": "bundle-5ea",
+        "name": "EMS Mini Pad (5ea)",
+        "description": "Full body care set. Special gift included.",
+        "price": 40000,
+        "originalPrice": 75000,
+        "currency": "KRW",
+        "image": "/images/ems-set-5.jpg",
+        "badges": [
+            "Free Shipping",
+            "+1 Gift"
+        ],
+        "shipping": 0,
+        "items": 5
+    }
+]

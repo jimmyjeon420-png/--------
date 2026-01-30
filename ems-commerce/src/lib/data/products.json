@@ -1,0 +1,38 @@
+[
+    {
+        "id": "ems-device-001",
+        "name": "Lumiere EMS Facial Massager",
+        "description": "Experience professional-grade facial lifting at home with our premium EMS technology. Sculpt, tone, and rejuvenate your skin.",
+        "price": 299000,
+        "currency": "KRW",
+        "images": [
+            "/images/product-1.jpg",
+            "/images/product-2.jpg"
+        ],
+        "category": "Device",
+        "stock": 50,
+        "features": [
+            "Microcurrent Technology",
+            "5 Intensity Levels",
+            "Wireless Charging",
+            "Waterproof IPX7"
+        ]
+    },
+    {
+        "id": "ems-gel-001",
+        "name": "Conductive Gel Primer",
+        "description": "Essential conductive gel for use with EMS devices. Hydrating formula enhanced with Hyaluronic Acid.",
+        "price": 35000,
+        "currency": "KRW",
+        "images": [
+            "/images/gel-1.jpg"
+        ],
+        "category": "Cosmetics",
+        "stock": 200,
+        "features": [
+            "Hyaluronic Acid",
+            "Non-sticky",
+            "Fragrance-free"
+        ]
+    }
+]
