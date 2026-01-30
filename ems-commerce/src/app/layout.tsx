@@ -20,10 +20,11 @@ const lato = Lato({
 });
 
 const notoSansKr = Noto_Sans_KR({
-  subsets: ["korean"],
+  subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "900"],
   variable: "--font-noto-sans-kr",
   display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
