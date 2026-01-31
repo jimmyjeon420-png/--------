@@ -34,7 +34,7 @@ export function ProductCard({ product }: ProductCardProps) {
                     {product.description}
                 </p>
                 <p className="font-medium text-foreground mt-2">
-                    {new Intl.NumberFormat('ko-KR', { style: 'currency', currency: product.currency }).format(product.price)}
+                    {new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(product.price)}
                 </p>
             </div>
         </Link>

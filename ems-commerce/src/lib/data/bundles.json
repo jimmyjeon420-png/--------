@@ -1,12 +1,12 @@
 [
     {
         "id": "bundle-1ea",
-        "name": "EMS Mini Pad (1ea)",
-        "description": "Perfect for trying it out. Instant relief for shoulders and neck.",
+        "name": "EMS Recovery Patch (1ea)",
+        "description": "Gentle EMS Relief. Stimulate muscle healing, reduce pain, promote blood circulation. Perfect for trying it out. Universal for all body parts.",
         "price": 9000,
         "originalPrice": 15000,
         "currency": "KRW",
-        "image": "/images/ems-single.jpg",
+        "image": "/images/product_01.jpg",
         "badges": [
             "Best Trial"
         ],
@@ -15,12 +15,12 @@
     },
     {
         "id": "bundle-3ea",
-        "name": "EMS Mini Pad (3ea)",
-        "description": "Keep one, gift two. Free Shipping included.",
+        "name": "EMS Recovery Patch (3ea)",
+        "description": "Keep one, gift two. Nature-Inspired Balance for your whole family. Free Shipping included. Recommended for all body parts.",
         "price": 25000,
         "originalPrice": 45000,
         "currency": "KRW",
-        "image": "/images/ems-set-3.jpg",
+        "image": "/images/product_02.jpg",
         "badges": [
             "Free Shipping",
             "Most Popular"
@@ -30,12 +30,12 @@
     },
     {
         "id": "bundle-5ea",
-        "name": "EMS Mini Pad (5ea)",
-        "description": "Full body care set. Special gift included.",
+        "name": "EMS Recovery Patch (5ea)",
+        "description": "Full family body care set. Gentle EMS Relief for all your needs. Special gift included. Recommended for neck, shoulder, leg, arm and knee.",
         "price": 40000,
         "originalPrice": 75000,
         "currency": "KRW",
-        "image": "/images/ems-set-5.jpg",
+        "image": "/images/product_03.jpg",
         "badges": [
             "Free Shipping",
             "+1 Gift"

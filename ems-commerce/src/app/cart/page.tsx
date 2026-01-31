@@ -42,7 +42,7 @@ export default function CartPage() {
                                         <Button variant="outline" size="icon" className="h-8 w-8" onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</Button>
                                     </div>
                                     <p className="font-medium">
-                                        {new Intl.NumberFormat('ko-KR', { style: 'currency', currency: item.currency }).format(item.price * item.quantity)}
+                                        {new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(item.price * item.quantity)}
                                     </p>
                                 </div>
                             </div>

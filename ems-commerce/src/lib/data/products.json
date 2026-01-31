@@ -1,38 +1,65 @@
 [
     {
-        "id": "ems-device-001",
-        "name": "Lumiere EMS Facial Massager",
-        "description": "Experience professional-grade facial lifting at home with our premium EMS technology. Sculpt, tone, and rejuvenate your skin.",
-        "price": 299000,
+        "id": "ems-mini-pad-001",
+        "name": "EMS Recovery Patch (1ea)",
+        "description": "Gentle EMS Relief that stimulates muscle healing and reduces pain. Promote blood circulation and raise tissue repair in the shortest time. Universal for all body parts. Perfect for trying it out - the price of two coffees.",
+        "price": 9000,
         "currency": "KRW",
         "images": [
-            "/images/product-1.jpg",
-            "/images/product-2.jpg"
+            "/images/product_01.jpg",
+            "/images/product_02.jpg",
+            "/images/product_03.jpg"
         ],
-        "category": "Device",
-        "stock": 50,
+        "category": "Massage Device",
+        "stock": 500,
         "features": [
-            "Microcurrent Technology",
-            "5 Intensity Levels",
-            "Wireless Charging",
-            "Waterproof IPX7"
+            "Stimulate muscle healing",
+            "Reduce pain and promote blood circulation",
+            "Raise tissue repair in shortest time",
+            "Universal for all body parts",
+            "Apply where it works - neck, shoulder, leg, arm, knee"
         ]
     },
     {
-        "id": "ems-gel-001",
-        "name": "Conductive Gel Primer",
-        "description": "Essential conductive gel for use with EMS devices. Hydrating formula enhanced with Hyaluronic Acid.",
-        "price": 35000,
+        "id": "ems-mini-pad-003",
+        "name": "EMS Recovery Patch (3ea)",
+        "description": "Keep one, gift two. Nature-Inspired Balance for your family. Promote blood circulation and muscle healing with Gentle EMS Relief. Free Shipping included. Recommended for all body parts.",
+        "price": 25000,
         "currency": "KRW",
         "images": [
-            "/images/gel-1.jpg"
+            "/images/product_02.jpg",
+            "/images/product_01.jpg",
+            "/images/product_03.jpg"
         ],
-        "category": "Cosmetics",
+        "category": "Massage Device",
+        "stock": 300,
+        "features": [
+            "3개 세트 - Keep one, gift two",
+            "무료배송 - Free Shipping included",
+            "전신 관리 - Recommended for all body parts",
+            "비용 효율적 - 1개당 8,333원",
+            "선물 추천 - Perfect as a gift for loved ones"
+        ]
+    },
+    {
+        "id": "ems-mini-pad-005",
+        "name": "EMS Recovery Patch (5ea)",
+        "description": "Full family body care set with Nature-Inspired Balance. Gentle EMS Relief solution for neck, shoulder, leg, arm and knee. Special gift included. Free Shipping.",
+        "price": 40000,
+        "currency": "KRW",
+        "images": [
+            "/images/product_03.jpg",
+            "/images/product_02.jpg",
+            "/images/product_01.jpg"
+        ],
+        "category": "Massage Device",
         "stock": 200,
         "features": [
-            "Hyaluronic Acid",
-            "Non-sticky",
-            "Fragrance-free"
+            "5개 세트 - Full family care set",
+            "무료배송 - Free Shipping",
+            "특별 선물 포함 - Special gift included",
+            "최저 가격 - 1개당 8,000원",
+            "단체용 추천 - Perfect for corporate gifts"
         ]
     }
 ]

@@ -1,94 +1,50 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Lato, Noto_Sans_KR } from "next/font/google";
-import Script from "next/script";
-import "./globals.css";
-import { cn } from "@/lib/utils";
-import { UTMInitializer } from "@/components/features/UTMInitializer";
-import { Analytics } from "@/components/features/Analytics";
+import React from "react"
+import type { Metadata } from 'next'
+import { Noto_Sans_KR } from 'next/font/google'
+import { AnalyticsScripts } from '@/components/analytics-scripts'
+import './globals.css'
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const notoSansKr = Noto_Sans_KR({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "900"],
-  variable: "--font-noto-sans-kr",
-  display: "swap",
-  preload: true,
-});
+const notoSansKR = Noto_Sans_KR({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  variable: '--font-noto-sans-kr',
+})
 
 export const metadata: Metadata = {
-  title: "EMS Beauty - Professional Home Care",
-  description: "Experience luxury EMS massage devices for professional home care.",
-};
+  title: 'Refrehae | 리프레해 - 일상의 회복',
+  description: '자연스러운 자극으로 일상을 회복하는 프리미엄 EMS 디바이스. 리프레해와 함께 건강한 라이프스타일을 시작하세요.',
+  generator: 'v0.app',
+  keywords: ['EMS', '근육자극', '건강', '웰니스', '리프레해', 'Refrehae'],
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
+  },
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="ko">
-      <head>
-        {/* Portone 결제 SDK */}
-        <Script
-          src="https://cdn.portone.io/v2/browser-sdk.js"
-          strategy="beforeInteractive"
-        />
-
-        {/* Google Tag Manager */}
-        {process.env.NEXT_PUBLIC_GTM_ID && (
-          <>
-            <Script
-              id="gtm-script"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                  })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
-                `,
-              }}
-            />
-          </>
-        )}
-      </head>
-      <body className={cn(
-        "min-h-screen bg-background font-sans antialiased",
-        playfair.variable,
-        lato.variable,
-        notoSansKr.variable
-      )}>
-        {/* Google Tag Manager (noscript) */}
-        {process.env.NEXT_PUBLIC_GTM_ID && (
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
-              height="0"
-              width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
-            />
-          </noscript>
-        )}
-
-        {/* 분석 및 추적 초기화 */}
-        <Analytics />
-        <UTMInitializer />
-
+      <body className={`${notoSansKR.variable} font-sans antialiased`}>
         {children}
+        <AnalyticsScripts />
       </body>
     </html>
-  );
+  )
 }
