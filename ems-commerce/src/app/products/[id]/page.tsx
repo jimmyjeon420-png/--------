@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowDown, Loader2 } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { getProduct, getProductBySlug, getProducts, formatPrice, type Product } from "@/lib/products"
-import { useTracking, TrackingProvider } from "@/lib/tracking"
+import { useTracking } from "@/lib/tracking"
 
 interface BundleOption {
   id: string
@@ -550,14 +550,14 @@ function OrderForm({ product }: OrderFormProps) {
 
 function ProductDetailContent({ product }: { product: Product }) {
   return (
-    <TrackingProvider>
+    <>
       <Header />
       <main>
         <ProductHero product={product} />
         <OrderForm product={product} />
       </main>
       <Footer />
-    </TrackingProvider>
+    </>
   )
 }
 

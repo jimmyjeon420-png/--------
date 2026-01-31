@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 3 npm run dev:*)",
+      "Bash(ls:*)",
+      "Bash(json \")",
+      "Bash(dir:*)",
+      "WebFetch(domain:klug.kr)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run build:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(taskkill:*)",
+      "Bash(cmd /c \"cd /d \"C:Users김고은Desktop화장품 홈페이지ems-commerce\" && rmdir /s /q \"srcappproducts[slug]\" && echo ✓ [slug] 디렉토리 삭제 완료\")",
+      "Bash(cmd /c \"dir \"C:Users김고은Desktop화장품 홈페이지ems-commercesrcappproducts\"\" \")",
+      "Bash(cd:*)",
+      "Bash(npm install:*)",
+      "Bash(lsof:*)",
+      "Bash(tail:*)",
+      "Bash(echo:*)"
+    ]
+  }
+}

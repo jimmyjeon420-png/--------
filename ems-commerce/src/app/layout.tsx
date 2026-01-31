@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata } from 'next'
 import { Noto_Sans_KR } from 'next/font/google'
 import { AnalyticsScripts } from '@/components/analytics-scripts'
+import { TrackingProviderWrapper } from '@/components/tracking-provider-wrapper'
 import './globals.css'
 
 const notoSansKR = Noto_Sans_KR({ 
@@ -42,8 +43,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${notoSansKR.variable} font-sans antialiased`}>
-        {children}
-        <AnalyticsScripts />
+        <TrackingProviderWrapper>
+          {children}
+          <AnalyticsScripts />
+        </TrackingProviderWrapper>
       </body>
     </html>
   )
