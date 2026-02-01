@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/%EA%B9%80%EA%B3%A0%EC%9D%80/Desktop/%ED%99%94%EC%9E%A5%ED%92%88%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/src/app/not-found.tsx"],"sourcesContent":["export default function NotFound() {\n  return (\n    <div className=\"flex flex-col items-center justify-center min-h-screen bg-white\">\n      <div className=\"text-center\">\n        <h1 className=\"text-6xl font-bold mb-4\">404</h1>\n        <p className=\"text-xl mb-8 text-gray-600\">찾을 수 없는 페이지입니다.</p>\n        <a\n          href=\"/\"\n          className=\"px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition\"\n        >\n          홈으로 돌아가기\n        </a>\n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAG,WAAU;8BAA0B;;;;;;8BACxC,8OAAC;oBAAE,WAAU;8BAA6B;;;;;;8BAC1C,8OAAC;oBACC,MAAK;oBACL,WAAU;8BACX;;;;;;;;;;;;;;;;;AAMT"}}]
+}

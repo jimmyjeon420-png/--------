@@ -1,0 +1,19 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/orders/cancel/route": "app/api/orders/cancel/route.js",
+  "/api/orders/route": "app/api/orders/route.js",
+  "/api/payment/verify/route": "app/api/payment/verify/route.js",
+  "/api/payment/webhook/route": "app/api/payment/webhook/route.js",
+  "/brand/page": "app/brand/page.js",
+  "/cart/page": "app/cart/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/payment/fail/page": "app/payment/fail/page.js",
+  "/payment/success/page": "app/payment/success/page.js",
+  "/policy/privacy/page": "app/policy/privacy/page.js",
+  "/policy/terms/page": "app/policy/terms/page.js",
+  "/products/[id]/page": "app/products/[id]/page.js",
+  "/products/page": "app/products/page.js"
+}

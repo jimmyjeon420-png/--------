@@ -1,0 +1,33 @@
+[00:00:02.784] Server  WARN    ⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result.
+[00:00:03.489] Server  LOG     ✓ Ready in 2.5s
+[00:00:06.575] Server  LOG     ○ Compiling / ...
+[00:00:13.993] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.192] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.889] Browser LOG     [Refrehae Tracking] {"data":{"page":"main","section":"hero"},"event_type":"page_view","page_path":"/","timestamp":"2026-02-01T05:38:10.737Z","utm_params":{}}
+[00:00:36.889] Browser WARN    Image with src "/images/model01.png" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:36.889] Browser WARN    Image with src "/images/brand01.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:36.890] Browser LOG     [Refrehae Tracking] {"data":{"page":"main","section":"hero"},"event_type":"page_view","page_path":"/","timestamp":"2026-02-01T05:38:10.813Z","utm_params":{}}
+[00:00:37.057] Browser WARN    Image with src "/images/back01.jpeg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:00:47.122] Browser WARN    [Product] ID not found: body-pro, using fallback product
+[00:00:47.122] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:47.122] Browser LOG     [Refrehae Tracking] {"data":{"page":"product_detail","product_id":"refrehae-body-pro","product_name":"리프레해 바디 프로","product_price":298000},"event_type":"page_view","page_path":"/products/body-pro","timestamp":"2026-02-01T05:38:21.027Z","utm_params":{}}
+[00:00:47.122] Browser LOG     [Tracking] view_item: {"product_id":"refrehae-body-pro","product_name":"리프레해 바디 프로","product_price":298000}
+[00:00:47.122] Browser LOG     [Refrehae Tracking] {"data":{"page":"product_detail","product_id":"refrehae-body-pro","product_name":"리프레해 바디 프로","product_price":298000},"event_type":"page_view","page_path":"/products/body-pro","timestamp":"2026-02-01T05:38:21.030Z","utm_params":{}}
+[00:00:47.122] Browser LOG     [Tracking] view_item: {"product_id":"refrehae-body-pro","product_name":"리프레해 바디 프로","product_price":298000}
+[00:00:47.122] Browser LOG     [Refrehae Tracking] {"data":{"page":"product_detail","product_id":"refrehae-body-pro","product_name":"리프레해 바디 프로","product_price":298000},"event_type":"page_view","page_path":"/products/body-pro","timestamp":"2026-02-01T05:38:21.050Z","utm_params":{}}
+[00:00:47.122] Browser LOG     [Tracking] view_item: {"product_id":"refrehae-body-pro","product_name":"리프레해 바디 프로","product_price":298000}
+[00:00:53.035] Browser LOG     [Refrehae Tracking] {"data":{"product_id":"refrehae-body-pro","product_name":"리프레해 바디 프로"},"event_type":"order_form_start","page_path":"/products/body-pro","timestamp":"2026-02-01T05:38:26.681Z","utm_params":{}}
+[00:00:56.131] Browser LOG     [EMS Commerce] Full Order Data with UTM: {"address":"경기도 성남시 분당구 야탑동 201 매화주공아파트1단지","addressDetail":"1003호","bundle":{"id":"bundle-1ea","items":1,"name":"EMS Recovery Patch (1ea)","price":9000},"name":"전상면","phone":"01050276033","product":{"id":"refrehae-body-pro","name":"리프레해 바디 프로","price":298000},"shipping":3000,"timestamp":"2026-02-01T05:38:30.059Z","total_price":12000,"utm_params":{}}
+[00:00:56.131] Browser LOG     [Refrehae Tracking] {"data":{"bundle_id":"bundle-1ea","bundle_items":1,"product_id":"refrehae-body-pro","total_price":12000},"event_type":"payment_attempt","page_path":"/products/body-pro","timestamp":"2026-02-01T05:38:30.059Z","utm_params":{}}
+[00:00:56.131] Browser LOG     Current PG: kakaopay.TC0ONETIME
+[00:00:56.131] Browser LOG     [DEBUG] 상인 ID: imp86325440
+[00:00:56.131] Browser LOG     Request from Merchant {"amount":12000,"buyer_addr":"경기도 성남시 분당구 야탑동 201 매화주공아파트1단지 1003호","buyer_email":"","buyer_name":"전상면","buyer_tel":"01050276033","custom_data":{"address":"경기도 성남시 분당구 야탑동 201 매화주공아파트1단지","addressDetail":"1003호","bundle":{"id":"bundle-1ea","items":1,"name":"EMS Recovery Patch (1ea)","price":9000},"name":"전상면","phone":"01050276033","product":{"id":"refrehae-body-pro","name":"리프레해 바디 프로","price":298000},"shipping":3000,"timestamp":"2026-02-01T05:38:30.059Z","total_price":12000,"utm_params":{}},"merchant_uid":"order_1769924310060_9ejyi7gmn","name":"EMS Recovery Patch (1ea)","pay_method":"card","pg":"kakaopay.TC0ONETIME"}
+[00:01:06.006] Browser ERROR   [Payment] Failed: [결제포기] 사용자가 결제를 취소하셨습니다
+[00:01:06.006] Browser LOG     [Refrehae Tracking] {"data":{"bundle_id":"bundle-1ea","error":"[결제포기] 사용자가 결제를 취소하셨습니다","product_id":"refrehae-body-pro","total_price":12000},"event_type":"payment_failure","page_path":"/products/body-pro","timestamp":"2026-02-01T05:38:38.573Z","utm_params":{}}
+[00:01:07.336] Browser LOG     [Refrehae Tracking] {"data":{"page":"main","section":"hero"},"event_type":"page_view","page_path":"/","timestamp":"2026-02-01T05:38:41.234Z","utm_params":{}}
+[00:01:07.336] Browser LOG     [Refrehae Tracking] {"data":{"page":"main","section":"hero"},"event_type":"page_view","page_path":"/","timestamp":"2026-02-01T05:38:41.241Z","utm_params":{}}
+[00:01:07.336] Browser LOG     [Refrehae Tracking] {"data":{"page":"main","section":"hero"},"event_type":"page_view","page_path":"/","timestamp":"2026-02-01T05:38:41.259Z","utm_params":{}}
+[00:01:09.819] Browser LOG     [Refrehae Tracking] {"data":{"page":"main","section":"hero"},"event_type":"page_view","page_path":"/","timestamp":"2026-02-01T05:38:43.748Z","utm_params":{}}
+[00:13:02.484] Server  ERROR   Error: ENOENT: no such file or directory, scandir 'C:\Users\김고은\Desktop\화장품 홈페이지\src\app'
+[00:13:02.499] Server  ERROR   ⨯ "unhandledRejection:" Error: ENOENT: no such file or directory, scandir 'C:\Users\김고은\Desktop\화장품 홈페이지\src\app'
+[00:13:02.500] Server  ERROR   ⨯ "unhandledRejection: " Error: ENOENT: no such file or directory, scandir 'C:\Users\김고은\Desktop\화장품 홈페이지\src\app'

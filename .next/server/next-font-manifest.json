@@ -1,0 +1,37 @@
+{
+  "app": {
+    "[project]/src/app/_not-found/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/brand/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/cart/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/payment/fail/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/payment/success/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/policy/privacy/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/policy/terms/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/products/[id]/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ],
+    "[project]/src/app/products/page": [
+      "static/media/fca78c2ee6cec166-s.p.11a55858.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

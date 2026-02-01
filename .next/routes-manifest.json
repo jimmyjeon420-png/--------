@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/auth/[...nextauth]",
+      "regex": "^/api/auth/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnextauth": "nxtPnextauth"
+      },
+      "namedRegex": "^/api/auth/(?<nxtPnextauth>.+?)(?:/)?$"
+    },
+    {
+      "page": "/products/[id]",
+      "regex": "^/products/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/products/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/orders",
+      "regex": "^/api/orders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/orders(?:/)?$"
+    },
+    {
+      "page": "/api/orders/cancel",
+      "regex": "^/api/orders/cancel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/orders/cancel(?:/)?$"
+    },
+    {
+      "page": "/api/payment/verify",
+      "regex": "^/api/payment/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payment/verify(?:/)?$"
+    },
+    {
+      "page": "/api/payment/webhook",
+      "regex": "^/api/payment/webhook(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payment/webhook(?:/)?$"
+    },
+    {
+      "page": "/brand",
+      "regex": "^/brand(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/brand(?:/)?$"
+    },
+    {
+      "page": "/cart",
+      "regex": "^/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/payment/fail",
+      "regex": "^/payment/fail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment/fail(?:/)?$"
+    },
+    {
+      "page": "/payment/success",
+      "regex": "^/payment/success(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment/success(?:/)?$"
+    },
+    {
+      "page": "/policy/privacy",
+      "regex": "^/policy/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/policy/privacy(?:/)?$"
+    },
+    {
+      "page": "/policy/terms",
+      "regex": "^/policy/terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/policy/terms(?:/)?$"
+    },
+    {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

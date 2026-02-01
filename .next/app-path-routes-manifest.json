@@ -1,0 +1,19 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/api/orders/cancel/route": "/api/orders/cancel",
+  "/api/orders/route": "/api/orders",
+  "/api/payment/verify/route": "/api/payment/verify",
+  "/api/payment/webhook/route": "/api/payment/webhook",
+  "/brand/page": "/brand",
+  "/cart/page": "/cart",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/payment/fail/page": "/payment/fail",
+  "/payment/success/page": "/payment/success",
+  "/policy/privacy/page": "/policy/privacy",
+  "/policy/terms/page": "/policy/terms",
+  "/products/[id]/page": "/products/[id]",
+  "/products/page": "/products"
+}

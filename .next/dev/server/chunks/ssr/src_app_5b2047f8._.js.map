@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/%EA%B9%80%EA%B3%A0%EC%9D%80/Desktop/%ED%99%94%EC%9E%A5%ED%92%88%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/src/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":[],"mappings":";;;;AAAA;;uCACe;IAAE,KAAA,0IAAG;IAAE,OAAO;IAAK,QAAQ;AAAI"}}]
+}
